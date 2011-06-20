@@ -233,10 +233,10 @@ namespace ReaderLibrary
             double value = GetRawAccel(channel);
 
             // check data
-            if (value < 0 || value > 1024) value = 0;
+            if (value < 0 || value > 4096) value = 0;
 
             // Scale 0 to 100 %
-            value = 100.0 * value / 1024.0;
+            value = 100.0 * value / 4096.0;
 
             // flip x,y by default
             if (channel == "x" || channel == "y") value = 100 - value;
@@ -264,8 +264,8 @@ namespace ReaderLibrary
             string data = epcID.Substring(2, 4);
             double value = Convert.ToInt32(data, 16);
             // check data
-            if (value < 0 || value > 1024) value = 0;
-            return ((value - 673) * 423) / 1024;
+            if (value < 0 || value > 4096) value = 0;
+            return ((value - 673) * 423) / 4096;
         }
         public string GetTemperatureSensor()
         {
