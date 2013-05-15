@@ -16,3 +16,21 @@ C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\AttenuatorTest\obj\
 C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\AttenuatorTest\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\AttenuatorTest\obj\Debug\AttenuatorTest.exe
 C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\AttenuatorTest\obj\Debug\AttenuatorTest.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\bin\Debug\AttenuatorTest.exe.config
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\bin\Debug\AttenuatorTest.exe
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\bin\Debug\AttenuatorTest.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\bin\Debug\LLRP.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\bin\Debug\Logging.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\bin\Debug\ReaderLibrary.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\bin\Debug\ZedGraph.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\bin\Debug\LLRP.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\bin\Debug\Logging.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\bin\Debug\ReaderLibrary.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\obj\Debug\AttenuatorTest.AttenTestForm.resources
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\obj\Debug\AttenuatorTest.EditAttenSettings.resources
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\obj\Debug\AttenuatorTest.Properties.Resources.resources
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\obj\Debug\AttenuatorTest.exe
+C:\Users\foo\Documents\GitHub\impinj-reader-app\AttenuatorTest\obj\Debug\AttenuatorTest.pdb

@@ -15,3 +15,19 @@ C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\MidiDemo\bin\Debug\
 C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\MidiDemo\bin\Debug\Sanford.Multimedia.Midi.pdb
 C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\MidiDemo\obj\Debug\MidiDemo.dll
 C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\MidiDemo\obj\Debug\MidiDemo.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\bin\Debug\MIDI_Control_Demo.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\bin\Debug\MIDI_Control_Demo.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\bin\Debug\Sanford.Multimedia.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\bin\Debug\Sanford.Multimedia.Midi.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\bin\Debug\Sanford.Threading.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\bin\Debug\Sanford.Multimedia.Timers.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\bin\Debug\Sanford.Collections.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\bin\Debug\Sanford.Multimedia.Midi.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\obj\Debug\MIDI_Control_Demo.MIDI_control.resources
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\obj\Debug\MIDI_Control_Demo.Properties.Resources.resources
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\obj\Debug\MIDI_Control_Demo.XY_panel.resources
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\obj\Debug\MIDI_Control_Demo.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\MidiDemo\obj\Debug\MIDI_Control_Demo.pdb

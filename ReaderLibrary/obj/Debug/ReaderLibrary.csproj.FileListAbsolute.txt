@@ -9,3 +9,14 @@ C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\ReaderLibrary\obj\D
 C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\ReaderLibrary\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\ReaderLibrary\obj\Debug\ReaderLibrary.dll
 C:\Users\anparks\Dropbox\WISP - Reader App\impinj-reader-app\ReaderLibrary\obj\Debug\ReaderLibrary.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\bin\Debug\ReaderLibrary.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\bin\Debug\ReaderLibrary.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\bin\Debug\LLRP.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\bin\Debug\LLRP.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\obj\Debug\ReaderLibrary.Properties.Resources.resources
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\obj\Debug\ReaderLibrary.SettingsForm.resources
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\obj\Debug\ReaderLibrary.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\ReaderLibrary\obj\Debug\ReaderLibrary.pdb

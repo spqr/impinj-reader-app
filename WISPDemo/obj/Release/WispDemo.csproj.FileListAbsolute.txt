@@ -154,3 +154,39 @@ C:\Users\anparks\Dropbox\WISP - Reader App\wisp_official\push-me\WISPDemo\obj\Re
 C:\Users\anparks\Dropbox\WISP - Reader App\wisp_official\push-me\WISPDemo\obj\Release\GenerateResource.write.1.tlog
 C:\Users\anparks\Dropbox\WISP - Reader App\wisp_official\push-me\WISPDemo\obj\Release\WISPDemo.exe.manifest
 C:\Users\anparks\Dropbox\WISP - Reader App\wisp_official\push-me\WISPDemo\obj\Release\WISPDemo.application
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\WISPDemo.exe.config
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\obj\Release\WISPDemo.exe
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\obj\Release\WISPDemo.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\WISPDemo.exe.manifest
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\WISPDemo.application
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\WISPDemo.exe
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\WISPDemo.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\BinkBonk.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\LLRP.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Logging.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\MIDI_Control_Demo.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\ReaderLibrary.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\SaturnDemo.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\ZedGraph.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Sanford.Multimedia.Midi.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Sanford.Multimedia.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Tao.OpenGl.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Tao.Platform.Windows.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Sanford.Threading.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Sanford.Multimedia.Timers.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Sanford.Collections.dll
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\BinkBonk.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\LLRP.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Logging.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\MIDI_Control_Demo.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\ReaderLibrary.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\SaturnDemo.pdb
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Tao.OpenGl.xml
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\bin\Release\Tao.Platform.Windows.xml
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\obj\Release\ResolveAssemblyReference.cache
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\obj\Release\WISPDemo.MainFrm.resources
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\obj\Release\WISPDemo.Properties.Resources.resources
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\obj\Release\GenerateResource.read.1.tlog
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\obj\Release\GenerateResource.write.1.tlog
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\obj\Release\WISPDemo.exe.manifest
+C:\Users\foo\Documents\GitHub\impinj-reader-app\WISPDemo\obj\Release\WISPDemo.application
