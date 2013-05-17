@@ -309,7 +309,7 @@ namespace WISPDemo
         private void UpdateTiltBarsAndLabels(double xac, double yac, double zac)
         {
             double senseangleX = 0, senseangleY = 0;
-            if (zac != 0.0)
+            if ((zac != 0.0) && (!System.Double.IsNaN(zac)))
             {
                 senseangleX = (float)((180 / 3.14149) * Math.Atan(xac / zac));
                 senseangleY = (float)(Math.Sign(zac) * (180 / 3.14149) * Math.Atan(yac / zac));

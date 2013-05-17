@@ -101,7 +101,7 @@ namespace SaturnDemo
 
             // Saturn values
             // Usual old method, pre axis permutation
-            if (zAccel != 0.0)
+            if ((zAccel != 0.0) && (!System.Double.IsNaN(zAccel)))          //modified line to check that zAccel is indeed a number (modified by Miran Alhaideri)
             {
                 myStage.senseangleX = (float)((180 / 3.14149) * Math.Atan(xAccel / zAccel));
                 myStage.senseangleY = (float)(Math.Sign(zAccel) * (180 / 3.14149) * Math.Atan(yAccel / zAccel));
