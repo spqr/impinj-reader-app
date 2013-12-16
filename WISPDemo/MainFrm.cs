@@ -230,11 +230,11 @@ namespace WISPDemo
         public void ClearMaxMin()
         {
             xMax = 0;
-            xMin = 1024;
+            xMin = 4096; // Moo 1.x has 12-bit ADC
             yMax = 0;
-            yMin = 1024;
+            yMin = 4096;
             zMax = 0;
-            zMin = 1024;
+            zMin = 4096;
         }
 
 
