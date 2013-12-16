@@ -888,6 +888,11 @@ namespace WISPDemo
             }
         }
 
+        private void txtIPAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
     }   // end class

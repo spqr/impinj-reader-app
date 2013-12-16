@@ -104,6 +104,9 @@ namespace WISPDemo
                 case TagType.WISP_SOC:
                     HandleSOCTag(tag);
                     break;
+                case TagType.WISP_DIGITAL_ACCEL:
+                    HandleDigitalAccelTagStats(tag);
+                    break;
                 default:
                     HandleCommercialTag(tag);
                     // no action for now...
@@ -141,6 +144,54 @@ namespace WISPDemo
             xac = tag.GetAccel("x");
             yac = tag.GetAccel("y");
             zac = tag.GetAccel("z");
+
+            currentX = currentX * alpha + xac * (1 - alpha);
+            currentY = currentY * alpha + yac * (1 - alpha);
+            currentZ = currentZ * alpha + zac * (1 - alpha);
+
+            // Now work with the raw adc values
+            xac = tag.GetRawAccel("x");
+            yac = tag.GetRawAccel("y");
+            zac = tag.GetRawAccel("z");
+
+            if (xac > xMax) xMax = xac;
+            if (yac > yMax) yMax = yac;
+            if (zac > zMax) zMax = zac;
+
+            if (xac < xMin) xMin = xac;
+            if (yac < yMin) yMin = yac;
+            if (zac < zMin) zMin = zac;
+
+            deltaX = xMax - xMin;
+            deltaY = yMax - yMin;
+            deltaZ = zMax - zMin;
+        }
+
+        private void HandleDigitalAccelTagStats(MyTag tag)
+        {
+            double alpha = accelInfo.alpha;
+
+            if (accelInfo.filterChkd)
+            {
+                //alpha = tbarLPFilter.Value;
+                alpha = alpha / 100.0;
+                if (alpha > 1 || alpha < 0)
+                {
+                    alpha = 0.2;
+                    Trace.WriteLine("alpha out of bounds");
+                }
+            }
+            else
+            {
+                alpha = 0.0;
+            }
+
+
+            double xac, yac, zac;
+            // First work with the scaled values
+            xac = tag.GetDigitalAccel("x");
+            yac = tag.GetDigitalAccel("y");
+            zac = tag.GetDigitalAccel("z");
 
             currentX = currentX * alpha + xac * (1 - alpha);
             currentY = currentY * alpha + yac * (1 - alpha);

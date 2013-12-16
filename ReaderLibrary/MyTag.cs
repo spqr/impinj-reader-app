@@ -57,6 +57,7 @@ namespace ReaderLibrary
         WISP_CAPACITANCE,
         WISP_DATA_LOGGER,
         WISP_SOC,
+        WISP_DIGITAL_ACCEL,
     }
 
     public class MyTag
@@ -114,6 +115,9 @@ namespace ReaderLibrary
                 case "0D":
                     type = TagType.WISP_ACCELEROMETER;
                     break;
+                case "12":
+                    type = TagType.WISP_DIGITAL_ACCEL;
+                    break;
                 case "0F":
                 case "0E":
                     type = TagType.WISP_TEMPERATURE;
@@ -156,6 +160,9 @@ namespace ReaderLibrary
             {
                 case "0B":
                     type = "Quick Accel";
+                    break;
+                case "12":
+                    type = "Digital Accel";
                     break;
                 case "0D":
                     type = "Full Accel";
@@ -231,10 +238,10 @@ namespace ReaderLibrary
             double value = GetRawAccel(channel);
 
             // check data
-            if (value < 0 || value > 1024) value = 0;
+            if (value < 0 || value > 4096) value = 0;
 
             // Scale 0 to 100 %
-            value = 100.0 * value / 1024.0;
+            value = 100.0 * value / 4096.0;
 
             // flip x,y by default
             if (channel == "x" || channel == "y") value = 100 - value;
@@ -256,18 +263,98 @@ namespace ReaderLibrary
 
         #endregion Accelerometer Parsing
 
+        #region Digtal Acclerometer Parsing
+
+        public int GetRawDigitalAccel(string channel)
+        {
+            string data = "";
+            switch (channel)
+            {
+                case "x":
+                    data = epcID.Substring(6, 4);
+                    break;
+                case "y":
+                    data = epcID.Substring(2, 4);
+                    break;
+                case "z":
+                    data = epcID.Substring(10, 4);
+                    break;
+                default:
+                    data = "0";
+                    break;
+            }
+            /* Need to start with conversion to Int16 so that we don't screw up the sign
+             * extension when we go to 32 bits */
+            return Convert.ToInt32(Convert.ToInt16(data, 16));
+        }
+
+        // Get the scaled, flipped value.
+        public double GetDigitalAccel(string channel)
+        {
+            channel = channel.ToLower();
+
+            double value = GetRawDigitalAccel(channel);
+            
+            /* Make postive */
+            value += 4096 / 2;
+            /* Scale to 0 to 100% */
+            value = 100.0 * value / 4096.0;
+
+            // flip x,y by default
+            if (channel == "x" || channel == "y") value = 100 - value;
+
+            return value;
+        }
+        #endregion
+
         #region Temperature Parsing
         public double GetTemperature()
         {
+            string id = epcID.ToString().Substring(0, 2);
+
             string data = epcID.Substring(2, 4);
             double value = Convert.ToInt32(data, 16);
-            // check data
-            if (value < 0 || value > 1024) value = 0;
-            return ((value - 673) * 423) / 1024;
+            if (value < 0 || value > 4096) value = 0;
+            
+
+            /* "0F" == Built in temperature sensor */
+            switch (id)
+            {
+                case "0F": /* Internal temperature sensor */
+                    //return ((value - 673) * 423) / 4096;
+                    //return (value - 403.3) / 12.71;         //modified by Miran (6/13/13). Denis's calculation of ADCval vs. Temp
+                    
+                    /* Equation from http://www.ti.com/lit/ug/slau144j/slau144j.pdf on page 562,
+                     * section 23.2.1, rearragning for Vin. Assuming Vr+ = 1.5V, and Vr-=0V. */
+                    double volts = value * (1.5 / 4095);
+                    
+                    /* Equation found in http://www.ti.com/lit/ug/slau144j/slau144j.pdf on page 550,
+                     * solved for temperature. */
+                    return (40.0 / 71.0) * (500.0 * volts - 493.0);
+                case "0E": /* External temperature sensor */
+                    double millivolts = value * (1.5 / 4095) * 1000;
+                    /* Equation found in http://www.ti.com/lit/ds/symlink/lm94021.pdf on page 12
+                     * with some rearranging to solve for temperature */
+                    return (5.0 / 44.0) * (5.0 * Math.Sqrt(5) * Math.Sqrt(1822253 - 352 * millivolts) - 13501);
+                default:
+                    return 0;
+            }
         }
+
+
         public string GetTemperatureSensor()
         {
-            return "Internal";
+            string id = epcID.ToString().Substring(0, 2);
+
+            switch (id)
+            {
+                case "0F":
+                    return "INTERNAL";
+                case "0E":
+                    return "EXTERNAL";
+                default:
+                    return "UNKNOWN";
+            }
         }
         #endregion
 
