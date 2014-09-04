@@ -155,6 +155,7 @@ namespace WISPDemo
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -1280,6 +1281,7 @@ namespace WISPDemo
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.checkBox1);
             this.groupBox6.Controls.Add(this.chkReadDisabled);
             this.groupBox6.Controls.Add(this.chkReadAll);
             this.groupBox6.Controls.Add(this.chkReadSelected);
@@ -1295,7 +1297,7 @@ namespace WISPDemo
             // 
             this.chkReadDisabled.AutoSize = true;
             this.chkReadDisabled.Checked = true;
-            this.chkReadDisabled.Location = new System.Drawing.Point(107, 25);
+            this.chkReadDisabled.Location = new System.Drawing.Point(107, 16);
             this.chkReadDisabled.Name = "chkReadDisabled";
             this.chkReadDisabled.Size = new System.Drawing.Size(95, 17);
             this.chkReadDisabled.TabIndex = 22;
@@ -1471,6 +1473,17 @@ namespace WISPDemo
             this.flowLayoutPanel5.Name = "flowLayoutPanel5";
             this.flowLayoutPanel5.Size = new System.Drawing.Size(379, 70);
             this.flowLayoutPanel5.TabIndex = 49;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(107, 40);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(65, 17);
+            this.checkBox1.TabIndex = 23;
+            this.checkBox1.Text = "Write All";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // MainFrm
             // 
@@ -1648,6 +1661,7 @@ namespace WISPDemo
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
         private System.Windows.Forms.CheckBox chkMIDI;
         private System.Windows.Forms.CheckBox chkBinkBonk;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }
 

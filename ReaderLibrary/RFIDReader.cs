@@ -614,7 +614,7 @@ namespace ReaderLibrary
             SendAccessSpec(msg);
         }
 
-        private void AddWriteAccessSpec(string tagID, string maskBits, string writeData, ReaderManager.ReaderConfig readerconfig)
+        public void AddWriteAccessSpec(string tagID, string maskBits, string writeData, ReaderManager.ReaderConfig readerconfig)
         {
             MSG_ADD_ACCESSSPEC msg = GetAccessSpecMsg(readerconfig);
             AddTagSpec(tagID, maskBits, msg);
@@ -748,7 +748,7 @@ namespace ReaderLibrary
                 readerMgr.AppendToDebugTextBox("ENABLE_ACCESSSPEC Command time out!" + "\n");
         }
 
-        private void DISABLE_ACCESSPEC()
+        public void DISABLE_ACCESSPEC()
         {
             MSG_DISABLE_ACCESSSPEC msg = new MSG_DISABLE_ACCESSSPEC();
             msg.AccessSpecID = 1001;

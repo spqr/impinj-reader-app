@@ -893,6 +893,18 @@ namespace WISPDemo
 
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.checkBox1.Checked)
+            {
+                readerMgr.StartWrite();
+            }
+            else
+            {
+                readerMgr.StopWrite();
+            }
+        }
+
 
 
     }   // end class

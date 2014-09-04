@@ -48,7 +48,9 @@ namespace ReaderLibrary
 
         // Read/Write access settings can be added from ready or userinventory states.
         // So just keep as a separate variable.
-        private bool readConfigured = false; 
+        private bool readConfigured = false;
+
+        private bool writeInProgress = false;
         
         private IRFIDGUI gui;
 
@@ -250,8 +252,6 @@ namespace ReaderLibrary
                 return;
             }
 
-            //reader.DELETE_ACCESSSPEC();  // clear out any old read commands
-
             reader.Set_Reader_Config(readerconfig);   // Sets the client configuration
 
             currentMode = GuiModes.UserInventory;
@@ -259,6 +259,24 @@ namespace ReaderLibrary
             // Add a ROSpec
             reader.Add_RoSpec(inventoryconfig, readerconfig);
             reader.Enable_RoSpec();
+        }
+
+        public void StartWrite()
+        {
+            if (!writeInProgress && IsConnected())
+            {
+                writeInProgress = true;
+                reader.AddWriteAccessSpec("0000", "0000000000000000", "BEAF", readerconfig);
+                reader.ENABLE_ACCESSSPEC();
+            }
+        }
+
+        public void StopWrite()
+        {
+            if (writeInProgress)
+            {
+                reader.DELETE_ACCESSSPEC();
+            }
         }
 
         // This guy checks to see if cmd is different than last time before executing.
@@ -324,6 +342,7 @@ namespace ReaderLibrary
             {
                 reader.Stop_RoSpec();
                 reader.Delete_RoSpec();
+                
                 currentMode = GuiModes.Ready;
             }
         }
@@ -334,7 +353,6 @@ namespace ReaderLibrary
             {
                 //Stop_RoSpec();
                 //Delete_RoSpec();
-                reader.DELETE_ACCESSSPEC();
                 readConfigured = false;
             }
         }
